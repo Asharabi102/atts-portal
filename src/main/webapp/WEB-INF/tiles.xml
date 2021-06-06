@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<definition name="structure"
+		template="/WEB-INF/jsps/structure.jsp">
+	</definition>
+	
+
+	<definition name="login" extends="structure">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/jsps/login.jsp" />
+	</definition>
+	
+	<definition name="register" extends="structure">
+		<put-attribute name="title" value="Registration" />
+		<put-attribute name="body" value="/WEB-INF/jsps/register.jsp" />
+	</definition>
+	
+	<definition name="home" extends="structure">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/jsps/home.jsp" />
+	</definition>
+	
+	<definition name="forgot" extends="structure">
+		<put-attribute name="title" value="Forgot Password" />
+		<put-attribute name="body" value="/WEB-INF/jsps/forgot.jsp" />
+	</definition>
+	
+	<definition name="reset" extends="structure">
+		<put-attribute name="title" value="Reset Password" />
+		<put-attribute name="body" value="/WEB-INF/jsps/reset.jsp" />
+	</definition>
+	
+	<definition name="reset_success" extends="structure">
+		<put-attribute name="title" value="Reset Password Success" />
+		<put-attribute name="body" value="/WEB-INF/jsps/reset_success.jsp" />
+	</definition>
+
+</tiles-definitions>
